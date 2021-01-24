@@ -8,5 +8,10 @@ public class BedStatusPage extends BasePage{
 		super(driver);
 
 	}
+	public test(WebDriver driver) {
 
+	}
+
+	
+	
 }
