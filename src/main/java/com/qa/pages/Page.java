@@ -25,6 +25,7 @@ public abstract class Page {
 	
 	
  
-	
+		//public abstract void waitForElement(By locator);//ggg
+
 
 }
