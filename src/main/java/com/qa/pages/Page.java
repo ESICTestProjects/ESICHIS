@@ -11,6 +11,8 @@ public abstract class Page {
 	public Page(WebDriver driver)
 	{
 		this.driver = driver;
+		
+		System.out.println("tet");
 	}
 	
 	
@@ -20,6 +22,8 @@ public abstract class Page {
 
 	
 	public abstract void waitForElement(By locator);//ggg//
+	
+	
  
 	
 
