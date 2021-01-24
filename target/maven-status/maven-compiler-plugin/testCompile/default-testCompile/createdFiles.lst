@@ -1,0 +1,13 @@
+com\qa\tests\CaseSheetTest.class
+com\qa\tests\CDRTest.class
+com\qa\tests\BedStatusTest.class
+com\qa\tests\HomePageTest.class
+com\qa\tests\BaseTest.class
+com\qa\tests\PatientAdmissionTest.class
+com\qa\tests\OTandResourceSchedulingPageTest.class
+com\qa\tests\DoctorWorklistTest.class
+com\qa\tests\UHIDPageTest.class
+com\qa\tests\SelectHospitalLocationPageTest.class
+com\qa\tests\LoginPageTest.class
+com\qa\tests\PatientCheckInTest.class
+com\qa\tests\CancelCheckinTest.class

@@ -2,7 +2,6 @@ package com.qa.util;
 
 import java.util.Iterator;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -40,6 +39,8 @@ public class util {
 		act.click(element).perform();
 	
 	}
+	
+
 	
 	public void rightClick(WebDriver driver, By locator) {
 
@@ -99,12 +100,25 @@ public class util {
 		}
 	}
 	
+	public String GetCheckinNumberText(WebElement strElement,WebDriver driver )
+	{
+		String strtext=(strElement.getText());
+		String strtextcheckin[] = strtext.split(" ");
+		
+		String Checkinnumber =strtextcheckin[2];
+		
+		return Checkinnumber;
+
+	
+		
+	
+	}
 	
 	public void selectDropdown(WebElement strElement,  WebDriver driver , String strData)
 	{
 		try
 		{
-			//waitForElement(strElement);
+		//waitForElement(strElement);
 			
 			System.out.println(strElement.getText());
 			

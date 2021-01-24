@@ -13,7 +13,6 @@ public class BasePage extends Page {
 
 	}
 
-	@Override
 	public WebElement getElement(By locator) {
 
 		WebElement element = null;
@@ -98,6 +97,10 @@ public class BasePage extends Page {
 		}
 
 	}
+
+	
+	
+
 
 
 }

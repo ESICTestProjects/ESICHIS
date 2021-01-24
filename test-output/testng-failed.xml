@@ -6,13 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.tests.PatientCheckInTest">
+      <class name="com.qa.tests.UHIDPageTest">
         <methods>
-          <include name="verifyPatientCheckInPageTitleTest"/>
           <include name="teardown"/>
+          <include name="doNavigateToUHIDcreationLinkTest"/>
           <include name="setuptest"/>
+          <include name="doUHIDCreationPageTest"/>
+          <include name="doNavigateToSelectHospitalLocationTest"/>
+          <include name="doLoginTest"/>
+          <include name="doNavigateToHISHomeTest"/>
         </methods>
-      </class> <!-- com.qa.tests.PatientCheckInTest -->
+      </class> <!-- com.qa.tests.UHIDPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

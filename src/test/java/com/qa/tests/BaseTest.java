@@ -6,14 +6,18 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import com.beust.jcommander.Parameter;
 import com.qa.pages.BasePage;
 import com.qa.pages.Page;
 
@@ -69,7 +73,15 @@ public class BaseTest {
 		} else if (prop.getProperty("browser").equals("ff")) {
 
 			//WebDriverManager.firefoxdriver().setup();
+			
+			/*String myproxy = "10.10.17.25:3128";
+			DesiredCapabilities caps = new DesiredCapabilities();
+			caps.setCapability(CapabilityType.PROXY, new Proxy().setHttpProxy(myproxy));
+			driver = new FirefoxDriver(caps);
+			*/
 			driver = new FirefoxDriver();
+			
+			
 		}
 
 		driver.get(prop.getProperty("url"));
@@ -87,7 +99,7 @@ public class BaseTest {
 
 	@AfterTest()
 	public void teardown() {
-		//driver.quit();
+	//	driver.quit();
 	}
 
 }
