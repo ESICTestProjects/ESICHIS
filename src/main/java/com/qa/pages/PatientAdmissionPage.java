@@ -1,5 +1,7 @@
 package com.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,11 +29,11 @@ private By ddlAdmissionType =By.id("ctl00_cphpage_ddlAdmissionType");
 
 private By ddlAdmissionSrc =By.id("ctl00_cphpage_ddlAdmissionSrc");
 
-private By ddlUnit =By.id("ctl00_cphpage_ddlUnit");
-
 private By btnSave =By.id("ctl00_cphpage_btnSave");
 
 private By ddlSpecialisation =By.id("ctl00_cphpage_ddlSpecialisation");
+
+private By ddlUnit =By.id("ctl00_cphpage_ddlUnit");
 
 private By PermanentSameAsPresentRadiobutton =By.id("ctl00_cphpage_PermanentSameAsPresent");
 
@@ -63,8 +65,8 @@ public WebElement getDdlAdmissionSrc() {
 	return getElement(ddlAdmissionSrc);
 }
 
-public WebElement getDdlUnit() {
-	return getElement(ddlUnit);
+public List<WebElement> getDdlUnit() {
+	return getElements(ddlUnit);
 }
 
 
@@ -107,11 +109,16 @@ public void doPatientAdmission(String IPnumber,String SpecialisationName,String 
 		Thread.sleep(3000);
 		getPermanentSameAsPresentRadiobutton().click();
 		
-		utilobj.selectDropdown(getDdlAdmissionType(), driver, AdmissionType);
-		utilobj.selectDropdown(getDdlAdmissionSrc(), driver, AdmissionSrc);
+
 		utilobj.selectDropdown(getddlSpecialisation(), driver, SpecialisationName);
 		Thread.sleep(2000);
-		utilobj.selectDropdown(getDdlUnit(), driver, DdlUnitName);
+		utilobj.selectDropdown(getDdlAdmissionType(), driver, AdmissionType);
+		utilobj.selectDropdown(getDdlAdmissionSrc(), driver, AdmissionSrc);
+		//utilobj.selectDropdownValue(getDdlUnit(), driver, DdlUnitName);
+		utilobj.selectDropdownValue(getDdlUnit(), driver, DdlUnitName);
+		
+		//utilobj.JSEnterText(getDdlUnit(), driver, DdlUnitName);
+		
 		Thread.sleep(3000);
 		getBtnSave().click();
 		getMyMessageBoxInfoButtonYes().click();

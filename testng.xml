@@ -7,13 +7,17 @@
 </listeners>
 
 
-  <test  name="Test" parallel = "test">
+  <test  name="Test1" parallel = "methods" >
     <classes>
-          <class name="com.qa.tests.UHIDPageTest"/>
+          <class name="com.qa.tests.OTandResourceSchedulingPageTest"/>
               
-         
-    </classes>
+       </classes>
+    
+    
+    
   </test> <!-- Test -->
-  
+    
+    
+    
 
-</suite> <!-- Suite -->
+ </suite> <!-- Suite -->

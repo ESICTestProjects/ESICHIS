@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="4" ignored="0" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="80061" started-at="2021-01-24T07:21:58Z" finished-at="2021-01-24T07:23:18Z">
+  <suite name="Suite" duration-ms="84898" started-at="2021-01-24T13:27:29Z" finished-at="2021-01-24T13:28:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="80061" started-at="2021-01-24T07:21:58Z" finished-at="2021-01-24T07:23:18Z">
+    <test name="Test" duration-ms="84898" started-at="2021-01-24T13:27:29Z" finished-at="2021-01-24T13:28:53Z">
       <class name="com.qa.tests.UHIDPageTest">
-        <test-method status="PASS" signature="setuptest()[pri:0, instance:com.qa.tests.UHIDPageTest@6591f517]" name="setuptest" is-config="true" duration-ms="18315" started-at="2021-01-24T07:21:58Z" finished-at="2021-01-24T07:22:17Z">
+        <test-method status="PASS" signature="setuptest()[pri:0, instance:com.qa.tests.UHIDPageTest@6591f517]" name="setuptest" is-config="true" duration-ms="23501" started-at="2021-01-24T13:27:29Z" finished-at="2021-01-24T13:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuptest -->
-        <test-method status="PASS" signature="doLoginTest()[pri:0, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doLoginTest" duration-ms="892" started-at="2021-01-24T07:22:17Z" finished-at="2021-01-24T07:22:18Z">
+        <test-method status="PASS" signature="doLoginTest()[pri:0, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doLoginTest" duration-ms="586" started-at="2021-01-24T13:27:52Z" finished-at="2021-01-24T13:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method status="FAIL" signature="doNavigateToSelectHospitalLocationTest()[pri:1, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doNavigateToSelectHospitalLocationTest" duration-ms="60776" started-at="2021-01-24T07:22:18Z" finished-at="2021-01-24T07:23:18Z">
+        <test-method status="FAIL" signature="doNavigateToSelectHospitalLocationTest()[pri:1, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doNavigateToSelectHospitalLocationTest" duration-ms="60692" started-at="2021-01-24T13:27:53Z" finished-at="2021-01-24T13:28:53Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -56,7 +56,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToSelectHospitalLocationTest -->
-        <test-method status="FAIL" signature="doNavigateToHISHomeTest()[pri:2, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doNavigateToHISHomeTest" duration-ms="2" started-at="2021-01-24T07:23:18Z" finished-at="2021-01-24T07:23:18Z">
+        <test-method status="FAIL" signature="doNavigateToHISHomeTest()[pri:2, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doNavigateToHISHomeTest" duration-ms="2" started-at="2021-01-24T13:28:53Z" finished-at="2021-01-24T13:28:53Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -96,7 +96,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToHISHomeTest -->
-        <test-method status="FAIL" signature="doNavigateToUHIDcreationLinkTest()[pri:3, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doNavigateToUHIDcreationLinkTest" duration-ms="1" started-at="2021-01-24T07:23:18Z" finished-at="2021-01-24T07:23:18Z">
+        <test-method status="FAIL" signature="doNavigateToUHIDcreationLinkTest()[pri:3, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doNavigateToUHIDcreationLinkTest" duration-ms="2" started-at="2021-01-24T13:28:53Z" finished-at="2021-01-24T13:28:53Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -136,7 +136,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToUHIDcreationLinkTest -->
-        <test-method status="FAIL" signature="doUHIDCreationPageTest()[pri:4, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doUHIDCreationPageTest" duration-ms="1" started-at="2021-01-24T07:23:18Z" finished-at="2021-01-24T07:23:18Z">
+        <test-method status="FAIL" signature="doUHIDCreationPageTest()[pri:4, instance:com.qa.tests.UHIDPageTest@6591f517]" name="doUHIDCreationPageTest" duration-ms="2" started-at="2021-01-24T13:28:53Z" finished-at="2021-01-24T13:28:53Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -176,7 +176,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUHIDCreationPageTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tests.UHIDPageTest@6591f517]" name="teardown" is-config="true" duration-ms="0" started-at="2021-01-24T07:23:18Z" finished-at="2021-01-24T07:23:18Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tests.UHIDPageTest@6591f517]" name="teardown" is-config="true" duration-ms="0" started-at="2021-01-24T13:28:53Z" finished-at="2021-01-24T13:28:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -3,10 +3,11 @@ package com.qa.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.qa.pages.DoctorWorklistPage;
+
 import com.qa.pages.HISHomePage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
+import com.qa.pages.OPCaseSheetPage;
 import com.qa.pages.PatientAdmissionPage;
 import com.qa.pages.PatientCheckInPage;
 import com.qa.pages.SelectHospitalLocationPage;
@@ -21,7 +22,7 @@ public class DoctorWorklistTest extends BaseTest {
 	HomePage homepage;
 	SelectHospitalLocationPage selecthospitallocationpage;
 	HISHomePage hishomepage;
-	DoctorWorklistPage doctorWorklistpage;
+	OPCaseSheetPage opCaseSheetPage;
 	PatientCheckInPage patientcheckInpage;
 
 	@Test(priority = 0)
@@ -74,17 +75,22 @@ public class DoctorWorklistTest extends BaseTest {
 	}
 */	
 	@Test(priority = 7)
-	public void doCaseSheetPrecriptionTest() {
+	public void doNavigateToDoctorWorklistTest() {
 
 		String txtcheckInNumber =patientcheckInpage.getPatientCheckinNumber();
-		doctorWorklistpage = hishomepage.doNavigateToDoctorWorklistLink();
-		doctorWorklistpage.doOpenCaseSheet(txtcheckInNumber);
+		opCaseSheetPage = hishomepage.doNavigateToDoctorWorklistLink();
+	//	String txtcheckInNumber = "";
+		opCaseSheetPage.doOpenCaseSheet(txtcheckInNumber);
+		//doctorWorklistpage.doOpenCaseSheet(txtcheckInNumber);
+		
+		
+		
 	}
 	
 	@Test(priority = 8)
 	public void doCasesheetprecripstionTest() {
 		
-		doctorWorklistpage.doCasesheetprecripstion(prop.getProperty("orderpackname"));
+		opCaseSheetPage.doCasesheetprecripstion(prop.getProperty("orderpackname"));
 		
 		
 

@@ -3,10 +3,11 @@ package com.qa.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.qa.pages.DoctorWorklistPage;
+
 import com.qa.pages.HISHomePage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
+import com.qa.pages.OPCaseSheetPage;
 import com.qa.pages.OTandResourceSchedulingPage;
 import com.qa.pages.PatientCheckInPage;
 import com.qa.pages.SelectHospitalLocationPage;
@@ -22,7 +23,7 @@ public class OTandResourceSchedulingPageTest extends BaseTest {
 	SelectHospitalLocationPage selecthospitallocationpage;
 	HISHomePage hishomepage;
 	OTandResourceSchedulingPage otandResourceSchedulingpage;
-
+	OPCaseSheetPage opCaseSheetPage;
 	@Test(priority = 0)
 	public void doLoginTest() {
 

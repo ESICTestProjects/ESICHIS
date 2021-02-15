@@ -13,7 +13,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
@@ -49,7 +51,7 @@ public class BaseTest {
 		}
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void setuptest() {
 
 		if (prop.getProperty("browser").equals("chrome")) {
@@ -77,8 +79,8 @@ public class BaseTest {
 			/*String myproxy = "10.10.17.25:3128";
 			DesiredCapabilities caps = new DesiredCapabilities();
 			caps.setCapability(CapabilityType.PROXY, new Proxy().setHttpProxy(myproxy));
-			driver = new FirefoxDriver(caps);
-			*/
+			driver = new FirefoxDriver(caps);*/
+			
 			driver = new FirefoxDriver();
 			
 			
@@ -86,20 +88,20 @@ public class BaseTest {
 
 		driver.get(prop.getProperty("url"));
 
-		try {
+	/*	try {
 			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 
 			e.printStackTrace();
 		}
-
+*/
 		page = new BasePage(driver);
 
 	}
 
-	@AfterTest()
+	@AfterClass()
 	public void teardown() {
-	//	driver.quit();
+		//driver.quit();
 	}
 
 }

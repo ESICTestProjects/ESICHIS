@@ -458,7 +458,6 @@ public class Steps {
 				driver.findElement(locator).isDisplayed();
 				Thread.sleep(5000);
 				break;
-				
 			}                      
 		}
 

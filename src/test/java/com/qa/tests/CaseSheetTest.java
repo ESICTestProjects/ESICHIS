@@ -4,10 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.pages.CaseSheetPage;
-import com.qa.pages.DoctorWorklistPage;
+
 import com.qa.pages.HISHomePage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
+import com.qa.pages.OPCaseSheetPage;
 import com.qa.pages.PatientCheckInPage;
 import com.qa.pages.SelectHospitalLocationPage;
 
@@ -20,7 +21,7 @@ public class CaseSheetTest extends BaseTest {
 	HomePage homepage;
 	SelectHospitalLocationPage selecthospitallocationpage;
 	HISHomePage hishomepage;
-	DoctorWorklistPage doctorWorklistpage;
+	OPCaseSheetPage opCaseSheetPage;
 	PatientCheckInPage patientcheckInpage;
 	CaseSheetPage caseSheetPage;
 

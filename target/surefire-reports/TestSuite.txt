@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 84.298 s <<< FAILURE! - in TestSuite
-doNavigateToSelectHospitalLocationTest(com.qa.tests.UHIDPageTest)  Time elapsed: 60.82 s  <<< FAILURE!
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 88.501 s <<< FAILURE! - in TestSuite
+doNavigateToSelectHospitalLocationTest(com.qa.tests.UHIDPageTest)  Time elapsed: 60.767 s  <<< FAILURE!
 java.lang.NullPointerException
 	at com.qa.tests.UHIDPageTest.doNavigateToSelectHospitalLocationTest(UHIDPageTest.java:35)
 
-doNavigateToHISHomeTest(com.qa.tests.UHIDPageTest)  Time elapsed: 0.002 s  <<< FAILURE!
+doNavigateToHISHomeTest(com.qa.tests.UHIDPageTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException
 	at com.qa.tests.UHIDPageTest.doNavigateToHISHomeTest(UHIDPageTest.java:41)
 
@@ -14,7 +14,7 @@ doNavigateToUHIDcreationLinkTest(com.qa.tests.UHIDPageTest)  Time elapsed: 0.003
 java.lang.NullPointerException
 	at com.qa.tests.UHIDPageTest.doNavigateToUHIDcreationLinkTest(UHIDPageTest.java:48)
 
-doUHIDCreationPageTest(com.qa.tests.UHIDPageTest)  Time elapsed: 0.002 s  <<< FAILURE!
+doUHIDCreationPageTest(com.qa.tests.UHIDPageTest)  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.NullPointerException
 	at com.qa.tests.UHIDPageTest.doUHIDCreationPageTest(UHIDPageTest.java:55)
 
