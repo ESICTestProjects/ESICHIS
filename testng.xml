@@ -9,7 +9,7 @@
 
   <test  name="Test1" parallel = "methods" >
     <classes>
-          <class name="com.qa.tests.OTandResourceSchedulingPageTest"/>
+          <class name="com.qa.tests.InpatientIssuePageTest"/>
               
        </classes>
     

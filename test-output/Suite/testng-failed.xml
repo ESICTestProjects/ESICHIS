@@ -6,16 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test1(failed)" parallel="methods">
     <classes>
-      <class name="com.qa.tests.OTandResourceSchedulingPageTest">
+      <class name="com.qa.tests.InpatientIssuePageTest">
         <methods>
+          <include name="doNavigateToInpatientIssueTest"/>
+          <include name="doLoginTest"/>
           <include name="doNavigateToHISHomeTest"/>
-          <include name="verifyOTSurgeryPageTitleTest"/>
-          <include name="doOTandResourceSchedulingnTest"/>
+          <include name="doNavigateToSelectHospitalLocationTest"/>
           <include name="teardown"/>
           <include name="setuptest"/>
-          <include name="doNavigateToOTandResourceSchedulingTest"/>
+          <include name="doInpatientIssueTest"/>
         </methods>
-      </class> <!-- com.qa.tests.OTandResourceSchedulingPageTest -->
+      </class> <!-- com.qa.tests.InpatientIssuePageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

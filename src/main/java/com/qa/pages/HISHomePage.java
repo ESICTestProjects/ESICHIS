@@ -64,6 +64,9 @@ public class HISHomePage extends BasePage {
 
 	private By IndentOrderLink = By.linkText("Indent Raise"); 
 	
+	private By InpatientIssuesLink = By.linkText("Inpatient Issues"); 
+	
+	
 	public WebElement getIndentOrderLink() {
 		return getElement(IndentOrderLink);
 
@@ -172,6 +175,11 @@ public class HISHomePage extends BasePage {
 
 	public WebElement getStoreConsumptionLink() {
 		return getElement(StoreConsumptionLink);
+
+	}
+	
+	public WebElement getInpatientIssuesLink() {
+		return getElement(InpatientIssuesLink);
 
 	}
 
@@ -328,6 +336,30 @@ public class HISHomePage extends BasePage {
 
 		return new IndentOrderPage(driver);
 
+	
 	}
+	
+	public InpatientIssuePage doNavigateInpatientIssueLink() {
+
+		utilobj.MoveElement(getStoreLinks(), driver);
+
+		getInpatientIssuesLink().click();
+
+		return new InpatientIssuePage(driver);
+
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

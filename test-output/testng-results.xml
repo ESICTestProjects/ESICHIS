@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="83762" started-at="2021-02-15T06:21:28Z" finished-at="2021-02-15T06:22:52Z">
+  <suite name="Suite" duration-ms="55837" started-at="2021-02-16T06:31:52Z" finished-at="2021-02-16T06:32:47Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="83762" started-at="2021-02-15T06:21:28Z" finished-at="2021-02-15T06:22:52Z">
-      <class name="com.qa.tests.OTandResourceSchedulingPageTest">
-        <test-method status="PASS" signature="setuptest()[pri:0, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="setuptest" is-config="true" duration-ms="14607" started-at="2021-02-15T06:21:28Z" finished-at="2021-02-15T06:21:42Z">
+    <test name="Test1" duration-ms="55837" started-at="2021-02-16T06:31:52Z" finished-at="2021-02-16T06:32:47Z">
+      <class name="com.qa.tests.InpatientIssuePageTest">
+        <test-method status="PASS" signature="setuptest()[pri:0, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="setuptest" is-config="true" duration-ms="4403" started-at="2021-02-16T06:31:52Z" finished-at="2021-02-16T06:31:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuptest -->
-        <test-method status="PASS" signature="doLoginTest()[pri:0, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="doLoginTest" duration-ms="960" started-at="2021-02-15T06:21:42Z" finished-at="2021-02-15T06:21:43Z">
+        <test-method status="PASS" signature="doLoginTest()[pri:0, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="doLoginTest" duration-ms="4229" started-at="2021-02-16T06:31:56Z" finished-at="2021-02-16T06:32:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method status="PASS" signature="doNavigateToSelectHospitalLocationTest()[pri:1, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="doNavigateToSelectHospitalLocationTest" duration-ms="15443" started-at="2021-02-15T06:21:43Z" finished-at="2021-02-15T06:21:59Z">
+        <test-method status="PASS" signature="doNavigateToSelectHospitalLocationTest()[pri:1, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="doNavigateToSelectHospitalLocationTest" duration-ms="22633" started-at="2021-02-16T06:32:00Z" finished-at="2021-02-16T06:32:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToSelectHospitalLocationTest -->
-        <test-method status="PASS" signature="doNavigateToHISHomeTest()[pri:2, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="doNavigateToHISHomeTest" duration-ms="26307" started-at="2021-02-15T06:21:59Z" finished-at="2021-02-15T06:22:25Z">
+        <test-method status="PASS" signature="doNavigateToHISHomeTest()[pri:2, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="doNavigateToHISHomeTest" duration-ms="1642" started-at="2021-02-16T06:32:23Z" finished-at="2021-02-16T06:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToHISHomeTest -->
-        <test-method status="PASS" signature="doNavigateToOTandResourceSchedulingTest()[pri:3, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="doNavigateToOTandResourceSchedulingTest" duration-ms="13073" started-at="2021-02-15T06:22:25Z" finished-at="2021-02-15T06:22:38Z">
+        <test-method status="PASS" signature="doNavigateToInpatientIssueTest()[pri:3, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="doNavigateToInpatientIssueTest" duration-ms="4683" started-at="2021-02-16T06:32:25Z" finished-at="2021-02-16T06:32:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doNavigateToOTandResourceSchedulingTest -->
-        <test-method status="PASS" signature="verifyOTSurgeryPageTitleTest()[pri:4, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="verifyOTSurgeryPageTitleTest" duration-ms="22" started-at="2021-02-15T06:22:38Z" finished-at="2021-02-15T06:22:38Z">
+        </test-method> <!-- doNavigateToInpatientIssueTest -->
+        <test-method status="PASS" signature="doInpatientIssueTest()[pri:4, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="doInpatientIssueTest" duration-ms="18206" started-at="2021-02-16T06:32:29Z" finished-at="2021-02-16T06:32:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyOTSurgeryPageTitleTest -->
-        <test-method status="PASS" signature="doOTandResourceSchedulingnTest()[pri:5, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="doOTandResourceSchedulingnTest" duration-ms="13263" started-at="2021-02-15T06:22:38Z" finished-at="2021-02-15T06:22:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doOTandResourceSchedulingnTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tests.OTandResourceSchedulingPageTest@475e586c]" name="teardown" is-config="true" duration-ms="0" started-at="2021-02-15T06:22:52Z" finished-at="2021-02-15T06:22:52Z">
+        </test-method> <!-- doInpatientIssueTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tests.InpatientIssuePageTest@475e586c]" name="teardown" is-config="true" duration-ms="0" started-at="2021-02-16T06:32:47Z" finished-at="2021-02-16T06:32:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.qa.tests.OTandResourceSchedulingPageTest -->
+      </class> <!-- com.qa.tests.InpatientIssuePageTest -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
